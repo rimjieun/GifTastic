@@ -28,7 +28,7 @@ $(document).ready(function() {
     topicList.push(newTopic);
     console.log(topicList);
     createBtns();
-  })
+  });
   //-----------------------------------------------------------------------------------
 
   // When you click a topic button, output 10 gifs for that topic.---------------------
@@ -84,10 +84,9 @@ $(document).ready(function() {
     else {
       var still = $(this).attr("data-still");
       $(this).attr("data-state", "still");
-      $(this).attr("src", still);
-    
-  });
-  }//---------------------------------------------------------------------------------
+      $(this).attr("src", still);  
+    }
+  });//---------------------------------------------------------------------------------
 
 
 
