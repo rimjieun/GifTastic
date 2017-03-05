@@ -6,11 +6,7 @@ $(document).ready(function() {
     "Friends",
     "How I Met Your Mother",
     "Jane the Virgin",
-    "Sailor Moon",
-    "Guilty Crown",
-    "hello",
-    "owl",
-    "elephant"
+    "Game of Thrones"
   ]
 
   // Create a topic buttons.---------------------------------------------------------
@@ -89,9 +85,9 @@ $(document).ready(function() {
       var still = $(this).attr("data-still");
       $(this).attr("data-state", "still");
       $(this).attr("src", still);
-    }
+    
   });
-  //---------------------------------------------------------------------------------
+  }//---------------------------------------------------------------------------------
 
 
 
