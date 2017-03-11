@@ -59,6 +59,7 @@ input {
 
 #add-btn:hover {
   background: rgba(255, 255, 102, 0.9);
+  cursor: pointer;
 }
 
 #input-section {
@@ -90,6 +91,7 @@ button {
 
 .topicBtn:hover {
   background: rgba(255, 255, 102, 0.9);
+  cursor: pointer;
 }
 
 #instructions {
