@@ -9,22 +9,45 @@
   <script type="text/javascript" src="assets/javascript/game.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Rim | GifTastic</title>
 </head>
 <body>
 
+<div id="column">
+
+  <div id="input-section">
+
+    <h1>Can't find the GIF you're looking for?</h1>
+
+    <form>
+      <label for="search">Add a topic:</label>
+      <input id="user-input" type="text" placeholder=" Search" name="search" maxlength="30">
+      <button id="add-btn" type="submit">Add</button>
+    </form>
+  </div>
+
+  <div id="btns-section">
+    <ul id="btns-list"></ul>
+  </div>
+
+</div>
+
+<div id="results">
+  <div id="instructions">
+    <div id="instructions1">
+      <h1>Click a topic to view GIFs.</h1>
+    </div>
+    <div id="instructions2">
+      <h1>Click GIF once to play/stop.</h1>
+      <h1>Double click GIF to get URL.</h1>
+    </div>
+  </div>
+  <div id="gif-section"></div>
+</div>
 
 
-<h3>What is your favorite animal?</h3>
-
-<form id="input-section">
-  <input type="text" placeholder="Search" name="search"><br>
-  <input id="add-btn" type="submit" value="Add"></button>
-</form>
-
-<div id="btns-section"></div>
-
-<div id="results"></div>
   
 </body>
 </html>
