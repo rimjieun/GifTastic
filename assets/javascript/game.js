@@ -99,11 +99,13 @@ $(document).ready(function() {
         ratingDiv.text("Rating: " + rating);
 
         var imgDiv = $("<img>");
-        imgDiv.attr("src", stillURL)
-        .attr("data-still", stillURL)
-        .attr("data-animate", animateURL)
-        .attr("data-state", "still")
-        .attr("data-original", originalURL);
+        imgDiv.attr({
+          "src": stillURL,
+          "data-still": stillURL,
+          "data-animate": animateURL,
+          "data-state": "still",
+          "data-original": originalURL
+        });
 
         newDiv.append(imgDiv);
         newDiv.append(ratingDiv);
@@ -122,13 +124,17 @@ $(document).ready(function() {
 
     if (state === "still") {
       var animate = $(this).attr("data-animate");
-      $(this).attr("data-state", "animate");
-      $(this).attr("src", animate);
+      $(this).attr({
+        "data-state": "animate",
+        "src": animate
+      });
     }
     else {
       var still = $(this).attr("data-still");
-      $(this).attr("data-state", "still");
-      $(this).attr("src", still);  
+      $(this).attr({
+        "data-state": "still",
+        "src": still
+      });  
     }
   });
   
